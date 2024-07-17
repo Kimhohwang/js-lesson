@@ -37,5 +37,3 @@ let userData = {
 let today = new Date();
 console.log(today);
 // => 2024-07-16T01:01:03.888Z
-
-
