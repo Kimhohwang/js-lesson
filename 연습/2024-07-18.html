@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>자바스크립트</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <span class="d-none d-lg-block">자바스크립트 연습일지</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="2024-07-17.html">
+          <i class="bi bi-grid"></i>
+          <span>2024-07-17</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="2024-07-18.html">
+          <i class="bi bi-grid"></i>
+          <span>2024-07-18</span>
+        </a>
+      </li>
+
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+    <section class="section">
+
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+
+        <!-- 5. 연산-->
+        <div class="accordion-item">
+          <h2 class="accordion-header bg-secondary ps-3 rounded-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <h5 class="fw-bold text-white">5. 연산</h5>
+            </button>
+          </h2>
+
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+            <div class="accordion-body">
+
+              <!-- 1. 사칙 연산-->
+              <div class="card">
+                <div class="card-body row">
+                  <!-- 좌측 -->
+                  <div class="col-3">
+                    <p> /* 종류-01. 사칙 연산 */ </p>
+                    <p> console.log(1 + 2); </p>
+                    <p> console.log(1 - 2); </p>
+                    <p> console.log(1 * 2); </p>
+                    <p> console.log(10 / 2); // => 5 </p>
+                    <p> console.log(11 % 3); // => 2 </p>
+                    <p> console.log(2 ** 3); // => 8 </p>
+                    <p> console.log(1 + 2 * 2); // => 5 </p>
+
+                  </div>
+
+                  <!-- 우측 -->
+                  <div class="col-9">
+                    <p> 연산 기호 종류 +, -, *, /, %, ** </p>
+                    <p> 더하기, 빼기, 곱하기, 나누기, 나눈후 나머지값, 몇승 </p>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 2. 문자열 연산-->
+              <div class="card">
+                <div class="card-body row">
+                  <!-- 좌측 -->
+                  <div class="col-3">
+                    <p> /* 종류-02. 문자열 연산 */ </p>
+                    <p> console.log("my" + "message"); // => "mymessage" </p>
+                    <p> console.log(2 + 2 + "1"); // => "41" </p>
+                    <p> console.log("2" + "3"); // => "23" </p>
+
+
+                  </div>
+
+                  <!-- 우측 -->
+                  <div class="col-9">
+                    <p> 2. 문자와 문자도 더해진다 </p>
+                    <p> 숫자 합계 + 문자1 이라서 문자 41이라는 결과 출력 </p>
+                    <p> 문자2와 문자3을 더해서 문자 23이라는 결과 출력 </p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 3. 복합 할당-->
+              <div class="card">
+                <div class="card-body row">
+                  <!-- 좌측 -->
+                  <div class="col-3">
+                    <p> /* 종류-03. 복합 할당 */ </p>
+                    <p> let count = 5; </p>
+                    <p> count = count + 1; </p>
+                    <p> console.log(count); // => 6 </p>
+                    <p> count += 1; </p>
+                    <p> console.log(count); // => 7 </p>
+                    <p> count -= 5; </p>
+                    <p> console.log(count); // => 2 </p>
+                    <p> count *= 10; </p>
+                    <p> console.log(count); // => 20 </p>
+
+
+
+                  </div>
+
+                  <!-- 우측 -->
+                  <div class="col-9">
+                    <p> 3. 복합할당 뭔지는 알겠는데 설명을 못하겠음 </p>
+                    <p> 길게 안쓰고 +=, -= 등으로 짧게 사용가능 </p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 4. 비교 연산-->
+              <div class="card">
+                <div class="card-body row">
+                  <!-- 좌측 -->
+                  <div class="col-3">
+                    <p> /* 종류-04. 비교 연산 */ </p>
+                    <p> console.log(2 > 1); </p>
+                    <p> console.log(2 >= 2); </p>
+                    <p> console.log(2 == 2); </p>
+                    <p> console.log(2 != 1); </p>
+                    <p> console.log("zebra" > "apple"); </p>
+                    <p> console.log("apples" > "apple"); </p>
+                    <p> console.log(1 == true); </p>
+                    <p> console.log(1 === true); // => false </p>
+
+
+
+
+                  </div>
+
+                  <!-- 우측 -->
+                  <div class="col-9">
+                    <p> 4. 비교연산 (불리언) </p>
+                    <p> 문자도 계산이 된다(아스키코드) </p>
+                    <p> z가 큰수고 문자길이가 길수록 큰수로 인식 </p>
+                    <p> 기호 ==는 같다 </p>
+                    <p> 기호 ===는 다르다 </p>
+                    <p> 기호 != 반대값 </p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 5. 논리 연산-->
+              <div class="card">
+                <div class="card-body row">
+                  <!-- 좌측 -->
+                  <div class="col-3">
+                    <p> /* 종류-05. 논리 연산 */ </p>
+                    <p> // && 연산 </p>
+                    <p> console.log(true && true); // => true </p>
+                    <p> console.log(false && true); // => false </p>
+                    <p> console.log(true && false); // => false </p>
+                    <p> console.log(false && false); // => false </p>
+                    <p> </p>
+                    <p> // 예시 </p>
+                    <p> const hour = 12; </p>
+                    <p> const minute = 40; </p>
+                    <p> if (hour == 12 && minute == 30) { </p>
+                    <p>   console.log("현재 시각은 12시 30분입니다."); </p>
+                    <p> } </p>
+                    <p> </p>
+                    <p> // || 연산 </p>
+                    <p> console.log(true || true); // => true </p>
+                    <p> console.log(false || true); // => true </p>
+                    <p> console.log(true || false); // => true </p>
+                    <p> console.log(false || false); // => false </p>
+                    <p> </p>
+                    <p> // 예시 </p>
+                    <p> const number = 2; </p>
+                    <p> if (number < 0 || number> 0) { </p>
+                    <p>   console.log("0이 아닌 정수입니다."); </p>
+                    <p> } </p>
+                    <p> </p>
+                    <p> // ! 연산 </p>
+                    <p> console.log(!true); // => false </p>
+                    <p> console.log(!false); // => true </p>
+                    <p> // 예시 </p>
+                    <p> const age = 17; </p>
+                    <p> const 성인인가요 = age >= 20; </p>
+                    <p> if (!성인인가요) { </p>
+                    <p>   console.log("아닙니다."); </p>
+                    <p> } </p>
+
+
+
+
+
+
+                  </div>
+
+                  <!-- 우측 -->
+                  <div class="col-9">
+                    <p> &&는 그리고, ||는 또는 </p>
+                    <p> &&는 하나라도 true가 아니면 false </p>
+                    <p> ||는 하나라도 true면 true </p>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 조건문-->
+        <div class="accordion-item">
+          <h2 class="accordion-header bg-secondary ps-3 rounded-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              <h5 class="fw-bold text-white">조건문</h5>
+            </button>
+          </h2>
+
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+            <div class="accordion-body">
+              <!-- card_ -->
+              <div>
+                <div class="card">
+
+                  <!-- row 시작-->
+                  <div class="row">
+
+                    <!-- 좌측 -->
+                    <div class="col-3">
+                      <div class="card-header">
+                        <h5>script 내용</h5>
+                      </div>
+
+                      <div class="card-body pt-3">
+                        <p> const 오늘_온도 = 24; </p>
+                        <p> if (오늘_온도 >= 30) { </p>
+                        <p>console.log("덥다"); </p>
+                        <p> } else if (오늘_온도 <= 20) { </p>
+                            <p>console.log("쌀쌀하다"); </p>
+                            <p> } else { </p>
+                            <p>console.log("적당하다"); </p>
+                            <p> } </p>
+                            <p> </p>
+                      </div>
+                      <div class="card-footer">
+
+                      </div>
+
+                    </div><!-- 좌측 end-->
+
+                    <!-- script -->
+                    <script>
+
+                    </script>
+
+
+                    <!-- 우측 -->
+                    <div class="col-9">
+                      <div class="pt-3">
+                        <br>
+                        <p class="pt-5">상수선언, 상수명: 오늘_온도, 오늘_온도의 값은 24</p>
+                        <p>만약 오늘_온도의 값이 30보다 같거나 크다면</p>
+                        <p>문자 덥다를 출력해</p>
+                        <p>그런데 만약 오늘_온도가 20과 같거나 작다면</p>
+                        <p>문자 쌀쌀하다를 출력해</p>
+                        <p>그것도 아니라면</p>
+                        <p>문자 적당하다를 출력해</p>
+                      </div>
+                    </div><!-- 우측 end-->
+
+                  </div><!-- row end-->
+                </div><!-- card end-->
+              </div><!-- card_ end-->
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 미션-->
+        <div class="accordion-item">
+          <h2 class="accordion-header bg-secondary ps-3 rounded-2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              <h5 class="fw-bold text-white">미션</h5>
+            </button>
+          </h2>
+
+          <div id="flush-collapseThree" class="accordion-collapse collapse show"
+            data-bs-parent="#accordionFlushExample">
+
+            <div class="accordion-body">
+              <!-- card_ -->
+              <div>
+                <div class="card">
+
+                  <!-- row 시작-->
+                  <div class="row">
+
+                    <!-- 좌측 -->
+                    <div class="col-4">
+                      <div class="card-header">
+                        <h5>미션 내용</h5>
+                      </div>
+
+                      <div class="card-body pt-3">
+                        <p>두 개의 숫자를 입력하여 연산하는 계산기를 구현한다.</p>
+                        <p>연산의 종류는 +, *, % 3개의 종류가 있다.</p>
+                        <p>연산의 종류를 판별하여 적절한 연산을 수행 후 결과를 출력한다.</p>
+                        <p>만약 하나라도 숫자 이외의 입력이 발생하면 연산의 결과는 null을 출력한다.</p>
+                        <p>만약 하나라도 지정 연산자 3개 이외의 입력이 발생하면 연산의 결과는 null을 출력한다.</p>
+
+                      </div>
+                      <div class="card-footer">
+                        <button class="btn btn-sm btn-outline-primary col-12" onclick="alert(result);">Result</button>
+                      </div>
+
+                    </div><!-- 좌측 end-->
+
+                    <!-- 우측 -->
+                    <div class="col-8">
+                      <div class="pt-3">
+                        <pre>
+  두개의 숫자 정의
+  연산의 종류 정의
+
+  하나라도 숫자가 아니라면 null값 출력
+  하나라도 지정된 연산자가 아니라면 null값 출력
+
+  연산 종류 판별하여 적절한 연산을 수행한다.
+
+</pre>
+                      </div>
+                    </div><!-- 우측 end-->
+                  </div><!-- row end-->
+                </div><!-- card end-->
+
+                <div class="card">
+                  <div class="card-body row">
+                    <div class="col-4">
+                      <p>	let a1 = 10;	</p>
+                      <p>let a2 = 30;	</p>
+                      <p>const operator = "+";	</p>
+                      <p>		</p>
+                      <p>const isAisNumber = typeof a1 == "number" && typeof a2 == "number";	</p>
+                      <p>const isOperatorValid = operator == "+" || operator == "*" || operator == "%";	</p>
+                      <p>		</p>
+                      <p>if (!isAisNumber && !isOperatorValid) {	</p>
+                      <p> console.log(null);	</p>
+                      <p>} else {	</p>
+                      <p> if (operator == "+") {	</p>
+                      <p>  console.log(result = a1 + a2);	</p>
+                      <p> } else if (operator == "%") {	</p>
+                      <p>  console.log(result = a1 % a2);	</p>
+                      <p> } else if (operator == "*") {	</p>
+                      <p>  console.log(result = a1 * a2);	</p>
+                      <p> }	</p>
+                      <p>}	</p>
+                      <p>		</p>
+                      <p>console.log(result);	</p>
+                      
+                    </div>
+                    <div class="col-8">
+  <pre class="fs-4">
+    변수명 a1에 숫자 10의 값을 부여한다;
+    변수명 a2에 숫자 30의 값을 부여한다;
+    상수명 operator에 문자 + 값을 부여한다;
+    상수명 isAisNumber는 변수 a1, a2의 타입이 number여야한다.
+    상수명 isOperatorValid는 상수명 operator의 값이 +, *, % 3가지 값중 하나라도 포함 되어야한다.
+
+    만약 isAisNumber의 값이 해당되지 않고 그리고 isOperatorValid의 값이 해당되지 않는다면
+    null값을 출력한다
+    null값이 아니면
+    만약 상수명 operator가 문자 + 와 같을때는
+    result라는 단어의 값은 a1 + a2 이다
+    또 아니고 만약 상수명 operator가 문자 * 와 같을때는
+    result라는 값은 a1 * a2 이다
+    또 아니고 만약 상수명 operator가 문자 % 와 같을때는
+    result라는 값은 a1 % a2 이다
+
+    result의 값을 출력해
+
+    a1은 숫자다
+    a2는 숫자다
+    그래서 isAisNumber에 해당된다
+
+    operator은 문자 + 다
+    그래서 isOperatorValid에 해당된다
+
+    그래서 값이 null은 아니다
+
+    만약 operator의 값이 +와 같다면
+    result의 값은 a1 + a2이다
+    operator의값이 +와 같다
+    
+    a1 + a2의 값은 40이다. 출력한다;
+
+  </pre>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- card_ end-->
+
+              <!-- script -->
+              <script>
+                let a1 = 10;
+                let a2 = 30;
+                const operator = "+";
+
+                const isAisNumber = typeof a1 == "number" && typeof a2 == "number";
+                const isOperatorValid = operator == "+" || operator == "*" || operator == "%";
+
+                if (!isAisNumber && !isOperatorValid) {
+                  console.log(null);
+                } else {
+                  if (operator == "+") {
+                    console.log(result = a1 + a2);
+                  } else if (operator == "%") {
+                    console.log(result = a1 % a2);
+                  } else if (operator == "*") {
+                    console.log(result = a1 * a2);
+                  }
+                }
+
+                console.log(result);
+
+              </script>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main><!-- End #main -->
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+</body>
+
+
+
+</html>
