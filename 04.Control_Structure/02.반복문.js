@@ -30,12 +30,6 @@ if (i < 3) {
 // }
 
 /* 주의사항 */
-// let sum1 = 0;
-// for (let i = 0; i < 3; i++) {
-//   sum1 += i;
-// }
-// console.log(sum1);
-
 // //! Error
 // for (let i = 0, sum2 = 0; i < 3; i++) {
 //   sum2 += i;

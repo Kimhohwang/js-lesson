@@ -17,5 +17,6 @@ function doLogin(id, pwd) {
   }
   return false;
 }
+loginResult = doLogin(존재하는_id, 존재하는_pwd);
 
 console.log(loginResult);

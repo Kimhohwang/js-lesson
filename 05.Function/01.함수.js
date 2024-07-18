@@ -17,7 +17,7 @@ showMessage(userName);
 
 /* 02. 반환값 */
 function isAdult(age) {
-  if (age >= 18) {
+  if (age >= 20) {
     return true;
   } else {
     return false;
