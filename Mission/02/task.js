@@ -14,7 +14,14 @@
 
 function solution(fee) {
   let answer = 0;
+
   // TODO
+  
+  if (fee >= 10000) {
+    answer = (fee + fee * 0.05) / 1300 + "$";
+  } else {
+    answer = fee / 1300 + "$";
+  }
   return answer;
 }
 

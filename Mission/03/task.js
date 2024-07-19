@@ -11,6 +11,14 @@
 function solution(boxData) {
   let answer = 0;
   // TODO
+  const nowDate = new Date();
+
+  if (nowDate > boxData.expiredIn) {
+    answer = "EXPIRED!!";
+  } else {
+    answer = "SAFE";
+  }
+
   return answer;
 }
 

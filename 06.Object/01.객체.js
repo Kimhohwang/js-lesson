@@ -19,3 +19,6 @@ user.email = "kim@naver.com";
 // 값 수정
 user.age = 19;
 // viewObject(user);
+
+
+

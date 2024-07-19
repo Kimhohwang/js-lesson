@@ -12,6 +12,10 @@
 function solution(num) {
   let answer = 0;
   // TODO
+  if (typeof num == "number") {
+    answer = String(num) + "$";
+  }
+
   return answer;
 }
 

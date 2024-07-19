@@ -1,15 +1,10 @@
-/* 
-  # 미션 1
+const loginResult = doLogin("testtest", "pwd");
+console.log(loginResult);
 
-  1부터 10까지의 숫자 중 짝수만을 출력하시오.
-*/
+function doLogin(id, pwd) {
+  if (id ==="testtest" && pwd === "pwd") {
+    return true;
+  }
+  return false;
+}
 
-/* 
-  # 미션 2
-
-  구구단을 6단부터 8단까지 출력하시오.
-  6 * 1 = 6, 6 * 2 = 12, ..., 6 * 9 = 54,
-  ...,
-  9 * 1 = 9, 9 * 2 = 18, ..., 9 * 9 = 81
-  hint: for문을 2번 사용
-*/
