@@ -15,7 +15,7 @@ let result = 0;
 const isInputIsNumber = typeof input1 == "number" && typeof input2 == "number";
 const isOperatorValid = operator == "+" || operator == "*" || operator == "%";
 
-if (!isInputIsNumber || !isOperatorValid) {
+if (isInputIsNumber === true || isOperatorValid === true) {
   result = null;
 } else {
   if (operator == "+") {

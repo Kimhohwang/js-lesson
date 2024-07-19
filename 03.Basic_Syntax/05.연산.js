@@ -42,7 +42,7 @@ console.log(false && false); // => false
 
 // 예시
 const hour = 12;
-const minute = 30;
+const minute = 40;
 if (hour == 12 && minute == 30) {
   console.log("현재 시각은 12시 30분입니다.");
 }
